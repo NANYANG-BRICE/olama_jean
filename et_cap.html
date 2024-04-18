@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>BeamForCast</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/base/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/datatable/dataTables.dataTables.css">
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo me-5" href="index.html"><img src="images/logo.svg" class="me-2"
+                        alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg"
+                        alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="ti-view-list"></span>
+                </button>
+                <ul class="navbar-nav mr-lg-2">
+                    <li class="nav-item nav-search d-none d-lg-block">
+                        <div class="input-group">
+                            <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                                <span class="input-group-text" id="search">
+                                    <i class="ti-search"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now"
+                                aria-label="search" aria-describedby="search">
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+                            <img src="images/faces/face28.jpg" alt="profile" />
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown"
+                            aria-labelledby="profileDropdown">
+                            <a class="dropdown-item" href="./pages/samples/login.html">
+                                <i class="ti-power-off text-primary"></i>
+                                Deconnexion
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="ti-view-list"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="ti-shield menu-icon"></i>
+                            <span class="menu-title">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prevision.html">
+                            <i class="ti-stats-up menu-icon"></i>
+                            <span class="menu-title">Previsions</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="et_cap.html">
+                            <i class="ti-pulse menu-icon"></i>
+                            <span class="menu-title">ET CAP</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rapport.html">
+                            <i class="ti-agenda menu-icon"></i>
+                            <span class="menu-title">Rapprots</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dim.html">
+                            <i class="ti-rss-alt menu-icon"></i>
+                            <span class="menu-title">Dimentionnement</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:?subject=Sujet de l'e-mail&body=Corps du message">
+                            <i class="ti-help menu-icon"></i>
+                            <span class="menu-title">Aide</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-md-12 grid-margin stretch-card">
+                                <div class="card rounded">
+                                    <div class="p-3">
+                                        <div class="row">
+                                            <div class="col-auto my-1 col-4">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Selectionnez la ville
+                                                        :</label>
+                                                    <select class="form-control form-control-sm"
+                                                        id="exampleFormControlSelect1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-auto my-1 col-3">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Selectionnez le site de depart
+                                                        :</label>
+                                                    <select class="form-control form-control-sm"
+                                                        id="exampleFormControlSelect1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-auto my-1 col-3">
+                                                <div class="form-group">
+                                                    <label for="exampleFormControlSelect1">Selectionnez le site modal 
+                                                        :</label>
+                                                    <select class="form-control form-control-sm"
+                                                        id="exampleFormControlSelect1">
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-auto my-1 col-2 ">
+                                                <span style="color: transparent;">.</span>
+                                                <div class="form-group">
+                                                    <button type="button" class="btn btn-primary text-white">
+                                                        Rechercher <i class="ti-search mx-1"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12 grid-margin stretch-card">
+                                <div class="card rounded">
+                                    <div class="card-body">
+                                        <table id="example" class="table table-striped table-bordered" style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>colone 1</th>
+                                                    <th>colone 2</th>
+                                                    <th>colone 3</th>
+                                                    <th>colone 4</th>
+                                                    <th>colone 5</th>
+                                                    <th>colone 6</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Tiger Nixon</td>
+                                                    <td>System Architect</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>61</td>
+                                                    <td>2011-04-25</td>
+                                                    <td>$320,800</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Garrett Winters</td>
+                                                    <td>Accountant</td>
+                                                    <td>Tokyo</td>
+                                                    <td>63</td>
+                                                    <td>2011-07-25</td>
+                                                    <td>$170,750</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ashton Cox</td>
+                                                    <td>Junior Technical Author</td>
+                                                    <td>San Francisco</td>
+                                                    <td>66</td>
+                                                    <td>2009-01-12</td>
+                                                    <td>$86,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cedric Kelly</td>
+                                                    <td>Senior Javascript Developer</td>
+                                                    <td>Edinburgh</td>
+                                                    <td>22</td>
+                                                    <td>2012-03-29</td>
+                                                    <td>$433,060</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Airi Satou</td>
+                                                    <td>Accountant</td>
+                                                    <td>Tokyo</td>
+                                                    <td>33</td>
+                                                    <td>2008-11-28</td>
+                                                    <td>$162,700</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brielle Williamson</td>
+                                                    <td>Integration Specialist</td>
+                                                    <td>New York</td>
+                                                    <td>61</td>
+                                                    <td>2012-12-02</td>
+                                                    <td>$372,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- content-wrapper ends -->
+                    <!-- partial:partials/_footer.html -->
+                    <footer class="footer">
+                        <div class="d-sm-flex justify-content-center">
+                            <span class="text-muted text-center d-block d-sm-inline-block">Copyright © <a
+                                    href="https://www.bootstrapdash.com/" target="_blank">BeamForCast.com
+                                </a>2024</span>
+                        </div>
+                    </footer>
+                    <!-- partial -->
+                </div>
+                <!-- main-panel ends -->
+            </div>
+            <!-- page-body-wrapper ends -->
+        </div>
+        <!-- container-scroller -->
+
+        <!-- plugins:js -->
+        <script src="vendors/base/vendor.bundle.base.js"></script>
+        <!-- endinject -->
+        <!-- Plugin js for this page-->
+        <script src="vendors/chart.js/Chart.min.js"></script>
+        <script src="js/jquery.cookie.js" type="text/javascript"></script>
+
+        <!-- End plugin js for this page-->
+        <!-- inject:js -->
+        <script src="js/off-canvas.js"></script>
+        <script src="js/hoverable-collapse.js"></script>
+        <script src="js/template.js"></script>
+        <script src="js/todolist.js"></script>
+        <!-- endinject -->
+        <!-- Custom js for this page-->
+        <script src="js/dashboard.js"></script>
+        <!-- End custom js for this page-->
+
+
+
+        <script src="css/datatable/jquery-3.7.1.js"></script>
+        <script src="css/datatable/bootstrap.bundle.min.js"></script>
+        <script src="css/datatable/bootstrap.bundle.min.js"></script>
+        <script src="css/datatable/dataTables.js"></script>
+        <script src="css/datatable/dataTables.bootstrap5.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable({
+                    "lengthMenu": [2, 5, 10, 25, 50, 100], // Define the options for entries per page
+                    "pageLength": 2 // Set the default entries per page
+                });
+            });
+        </script>
+</body>
+
+</html>
